@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BekMebel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        
+        <h1 class="logo">
+            <a href="./index.html">BekMebel</a>
+        </h1>    
+        
+        <nav class="nav">
+            <ul class="nav-links" id="nav-links">
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./info_table.html">Info table</a></li>
+                <li class="link"><a href="./sofas.html">Sofas</a></li>
+                <li class="link"><a href="./beds.html">Beds</a></li>
+                <li class="link"><a href="./about_us.html">About us</a></li>
+                <li class="link"><a href="./contact_us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main class="main">
+        <p class="warning">“This website was created to fulfill Web Technology
+            module’s requirements and does not represent an actual company or service”.</p>
+        <section class="banner-sec">
+            <div class="top-banner">
+                <p>Experience unparalleled comfort and timeless design with our premium three-seater sofa. Crafted with the finest materials, it promises both durability and style.</p>
+                <img src="./images/sofas/4177013.jpg" alt="sofa image" class="img">
+            </div>
+            <div class="top-banner">
+                <p>Transform your bedroom into a sanctuary of relaxation with our luxurious upholstered bed. Its modern design and plush cushioning make it a must-have for restful nights.</p>
+                <img src="./images/beds/4544122.jpg" alt="bed image" class="img">
+            </div>
+        </section>
+
+        <section class="products-sec">
+            <h2 class="h2-heading">Popular Sofas</h2>
+            <div class="sofa-products" id="sofa-products">
+                <!-- this is the section to which the data will be inserted dynamically with javascript -->
+            </div>
+        </section>
+        
+
+        <section class="products-sec2">
+            <h2 class="h2-heading">Trendy Beds</h2>
+            <div class="sofa-products" id="bed-products">
+                <!-- This is the second part that would be inserted via js array of objects -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="footer-section about">
+                <h3>About BekMebel</h3>
+                <p>Your one-stop solution for stylish and comfortable furniture. We provide premium sofas, trendy beds, and more to turn your house into a home.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sofas.html">Sofas</a></li>
+                    <li><a href="beds.html">Beds</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Our Socials</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/"><img src="./images/socials/png-transparent-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-facebook-icon-thumbnail-removebg-preview.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/socials/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail-removebg-preview.png" alt="Instagram"></a></li>
+                    <li><a href="https://x.com/?lang=ru"><img src="./images/socials/png-transparent-icon-logo-twitter-logo-twitter-logo-blue-social-media-area-thumbnail-removebg-preview.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BekMebel | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+/* Product Grid Section */
+.product-grid {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 180px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 40px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #555;
+}
+
+/* Media Queries for responsivness */
+
+/* Tablets mediaquery */
+@media (max-width: 992px) {
+    /* Grid Container */
+    .grid-container {
+        padding: 10px 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .newsletter-form input {
+        width: 250px;
+    }
+}
+
+/* Mobile Devices responsivness */
+@media (max-width: 600px) {
+    /* Grid Container */
+    .grid-container {
+        padding: 10px 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        max-width: 150px;
+    }
+}

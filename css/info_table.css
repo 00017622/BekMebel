@@ -1,0 +1,83 @@
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto; /* making sure there will be horizontral scroll for the table*/
+    margin: 20px auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; 
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #333; 
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table img {
+    max-width: 165px; 
+    height: auto;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    /* Table elements displayed as block */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px 15px;
+        border: 1px solid #333;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td::before {
+        content: attr(data-label); /* this is gonna take the data-labels the labels
+                                  of each field and place them on the left and the actual
+                                 content on the right*/
+        font-weight: bold;
+        width: 45%;
+        text-align: left;
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    td > * { /* that way I take all the children elements of td with this expression*/
+        flex: 1;
+        max-width: 55%;
+        word-wrap: break-word;
+    }
+
+    td img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
